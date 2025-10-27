@@ -7,9 +7,12 @@ body{
   font-family: "Signika Negative", sans-serif
 }
 /* Nav */
-nav p{
+nav li{
     font-size: 22px;
 font-weight: 500;
+}
+nav li{
+    padding-left: 2rem;
 }
 /* Main */
 main{
@@ -25,22 +28,26 @@ main h1{
 span{
     color: #974FD0;
 }
-li{
-    font-size: 22px;
-}
+
 main p{
     font-size: 24px;
     font-weight: 400;
     color: #737171;
     width: 535px;
 }
+
 button{
     font-size: 24px;
     color: white;
     background-color: #974FD0;
-    width: 201px;
+    /* width: 201px; */
     height: 50px;
     border-radius: 0.75rem;
+}
+#div-1 button {
+    padding: 10px 25px;
+height: 75px;
+
 }
 
 @media (max-width: 428px) {
@@ -48,6 +55,9 @@ button{
     #logo-img{
 width: 130px;
 height: 35px;
+    }
+    li{
+        font-size: 22px;
     }
     /* Main */
     #main-div{
@@ -71,11 +81,18 @@ height: 110px;
 main h1{
 font-size: 35px;
 margin-top: 2rem;
+text-align: center;
+line-height: 1.5;
+}
+main #div-1 {
+    display: flex;
+    justify-content: center;
 }
 
 main p{
     font-size: 18px;
     width: 350px;
+    text-align: center;
 }
 }
 
